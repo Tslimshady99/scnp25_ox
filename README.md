@@ -5,7 +5,7 @@ SCNP25 item support for Ox_inventory.
 Change all codeplugs to something random in order to limit users to only have access to the radio by item.
 
 # Ox_Inventory
-All files in upload to Ox_inventory need to be added / copied to the following paths list in the folder.
+The example below should be placed in data > items.lua
 
 The following is an example on how to create a radio item in Ox_inventory.
 
