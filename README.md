@@ -11,15 +11,15 @@ The following is an example on how to create a radio item in Ox_inventory.
 
 ```lua
 ['expradio'] = {
-		label = 'Example Radio', -- What shows up when you hover over the radio
-		weight = -1,
-		stack = false,
-		close = true,
-		consume = 0,
-		server = {
-			export = 'scnp25_ox.radiotoolbox'
-		}
-	},
+	label = 'Example Radio', -- What shows up when you hover over the radio
+	weight = -1,
+	stack = false,
+	close = true,
+	consume = 0,
+	server = {
+		export = 'scnp25_ox.radiotoolbox'
+	}
+},
 
 ```
 
