@@ -1,0 +1,39 @@
+--[[
+──────────────────────────────────────────────────────────────────
+
+	SEM_InteractionMenu (fxmanifest.lua) - Created by Scott M
+	
+    Edited by TRP (Tristian F. and Erving Q.)
+	
+	Support: https://semdevelopment.com/discord
+	
+		!!! Change vaules in the 'config.lua' !!!
+	DO NOT EDIT THIS IF YOU DON'T KNOW WHAT YOU ARE DOING
+
+──────────────────────────────────────────────────────────────────
+]]
+
+
+
+fx_version 'cerulean'
+games {'gta5'}
+
+lua54 'yes'
+
+--DO NOT REMOVE THESE
+title 'SCNP25 OX'
+description 'OX_Inventory supported radio items for SCNP'
+author 'SSchadboat'
+version 'v1.1'
+
+client_scripts {
+    'client.lua',
+}
+
+server_scripts {
+    'server.lua',
+}
+
+shared_scripts {
+    'config.lua'
+}
