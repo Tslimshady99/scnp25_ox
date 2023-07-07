@@ -1,19 +1,3 @@
---[[
-──────────────────────────────────────────────────────────────────
-
-	SEM_InteractionMenu (fxmanifest.lua) - Created by Scott M
-	
-    Edited by TRP (Tristian F. and Erving Q.)
-	
-	Support: https://semdevelopment.com/discord
-	
-		!!! Change vaules in the 'config.lua' !!!
-	DO NOT EDIT THIS IF YOU DON'T KNOW WHAT YOU ARE DOING
-
-──────────────────────────────────────────────────────────────────
-]]
-
-
 
 fx_version 'cerulean'
 games {'gta5'}
