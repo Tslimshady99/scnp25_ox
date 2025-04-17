@@ -1,13 +1,15 @@
-# (Unoffical) Ox_inventory support for SCNP25 Radio Script
-SCNP25 item support for Ox_inventory.
+# (Unofficial) Ox_inventory Support for [SCNP25 Radio Script](https://scncomms.app)
 
-## recommended changes to SCNP25
-Change all codeplugs to something random in order to limit users to only have access to the radio by item.
+Adds SCNP25 item support for Ox_inventory.
 
-# Ox_Inventory
-The example below should be placed in data > items.lua
+## Recommended Changes to SCNP25
 
-The following is an example on how to create a radio item in Ox_inventory.
+It is recommended to randomize all codeplugs to limit users to accessing radios **only through the item** system.
+
+## Ox_inventory Setup
+
+The example below should be placed in `data > items.lua`.  
+It shows how to create a radio item in Ox_inventory:
 
 ```lua
 ['expradio'] = {
@@ -20,26 +22,35 @@ The following is an example on how to create a radio item in Ox_inventory.
 		export = 'scnp25_ox.radiotoolbox'
 	}
 },
-
 ```
 
-# Item Images
-Depending on the model you are using for the radio, you will need to rename the image to the item name. (ex. leoradio, APX900.png is changed to leoradio.png) Once you have renamed the models to what you plan to use you will need to upload them to Ox_inventory > web > images.
+## Item Images
 
-# Config
+Depending on the radio model you are using, you will need to **rename the image** to match the item name.  
+Example: if your item is `leoradio`, rename `APX900.png` to `leoradio.png`.
 
-Add radios to the config.lua comments for instructions on in the file with an example item.
+After renaming, upload the images to `Ox_inventory > web > images`.
 
-# Dependencies for the script to work
+## Config Setup
 
-- SCNP25 - Not Optional
-- Ox_inventory - Not Optional
-- Ox_lib - Optional | remove `TriggerClientEvent('ox_lib:notify', inventory.id, {type = 'success', description = 'Radio assigned by ' .. dept})` from server.lua if you do not wish to use Ox_lib.
+Add your radio items to `config.lua`.  
+Instructions and an example item are included in the file comments.
 
-# Support
-As this is an unoffical SCNP25 script, SCN will not give support for this script.
+## Script Dependencies
 
-# Planed updates
+- **SCNP25** (Required)
+- **Ox_inventory** (Required)
+- **Ox_lib** (Optional) — If you do not wish to use Ox_lib, remove the following line from `server.lua`:
+  ```lua
+  TriggerClientEvent('ox_lib:notify', inventory.id, {type = 'success', description = 'Radio assigned by ' .. dept})
+  ```
 
-- Battery item
-- when radio is removed from your inventory it turns off the radio.
+## Support
+
+This is an unofficial SCNP25 script.  
+**SCN will not provide support** for this add-on.
+
+## Planned Updates
+
+- Add a battery item
+- Automatically turn off the radio when it is removed from the inventory

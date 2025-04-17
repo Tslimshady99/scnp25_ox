@@ -6,7 +6,7 @@ lua54 'yes'
 
 --DO NOT REMOVE THESE
 title 'SCNP25 OX'
-description 'OX_Inventory supported radio items for SCNP'
+description 'OX_Inventory supported radio items for SCNP25'
 author 'SSchadboat'
 version 'v1.1'
 
