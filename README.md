@@ -2,9 +2,9 @@
 
 Adds SCNP25 item support for Ox_inventory.
 
-## Recommended Changes to SCNP25
+## Recommended Changes for your SCNP25 installation
 
-It is recommended to randomize all codeplugs to limit users to accessing radios **only through the item** system.
+It is recommended to randomize all codeplug names to limit users to accessing radios only through the item system.
 
 ## Ox_inventory Setup
 
@@ -26,7 +26,7 @@ It shows how to create a radio item in Ox_inventory:
 
 ## Item Images
 
-Depending on the radio model you are using, you will need to **rename the image** to match the item name.  
+Depending on the radio model you are using, you will need to rename the image to match the item name.  
 Example: if your item is `leoradio`, rename `APX900.png` to `leoradio.png`.
 
 After renaming, upload the images to `Ox_inventory > web > images`.
@@ -48,7 +48,7 @@ Instructions and an example item are included in the file comments.
 ## Support
 
 This is an unofficial SCNP25 script.  
-**SCN will not provide support** for this add-on.
+**SCN will not provide support for this add-on.**
 
 ## Planned Updates
 
