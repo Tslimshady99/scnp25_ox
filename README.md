@@ -12,24 +12,21 @@ The example below should be placed in `data > items.lua`.
 It shows how to create a radio item in Ox_inventory:
 
 ```lua
-['expradio'] = {
-	label = 'Example Radio', -- What shows up when you hover over the radio
+['expradio'] = { -- Item Name
+	label = 'Example Radio', -- The In-game name of the radio
 	weight = -1,
 	stack = false,
 	close = true,
 	consume = 0,
 	server = {
-		export = 'scnp25_ox.radiotoolbox'
+		export = 'scnp25_menu.useradio'
 	}
 },
 ```
 
 ## Item Images
 
-Depending on the radio model you are using, you will need to rename the image to match the item name.  
-Example: if your item is `leoradio`, rename `APX900.png` to `leoradio.png`.
-
-After renaming, upload the images to `Ox_inventory > web > images`.
+Once the beta verison is completed the Supported Inventories will pull the image from the image file. 
 
 ## Config Setup
 
@@ -39,11 +36,15 @@ Instructions and an example item are included in the file comments.
 ## Script Dependencies
 
 - **SCNP25** (Required)
-- **Ox_inventory** (Required)
-- **Ox_lib** (Optional) — If you do not wish to use Ox_lib, remove the following line from `server.lua`:
-  ```lua
-  TriggerClientEvent('ox_lib:notify', inventory.id, {type = 'success', description = 'Radio assigned by ' .. dept})
-  ```
+- **ox_lib** (Required)
+
+## Supported Inventories
+
+- **ox_inventory**
+
+## Supported Frameworks
+
+- **ND_Core**:
 
 ## Support
 
@@ -52,5 +53,4 @@ This is an unofficial SCNP25 script.
 
 ## Planned Updates
 
-- Add a battery item
-- Automatically turn off the radio when it is removed from the inventory
+- Supporting the following frameworks: Qbox, ESX, QB
